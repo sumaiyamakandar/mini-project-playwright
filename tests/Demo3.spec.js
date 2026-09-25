@@ -38,5 +38,6 @@ test('test to-do app @sanity', async ({ page }) => {
   await expect(page.getByTestId('todo-list')).toContainText('Go for walk');
   await page.getByRole('button', { name: 'Clear completed' }).click();
   await page.getByRole('link', { name: 'All' }).click();
+  await page.getByRole('link', { name: 'All' }).click();
   
 });
